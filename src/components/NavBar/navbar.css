@@ -1,0 +1,160 @@
+.navbar {
+    background-image: url('/home/sweta/portfolio/src/assets/background.png');
+    background-size: cover; /* or 'contain' based on your preference */
+    height: 6rem;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem; /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 2rem;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.profile {
+    object-fit: cover;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: 2px solid #ffffff; /* White border, adjust color as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow with a slight transparency */
+}
+
+.desktopMenuListItem {
+  cursor: pointer;
+  margin: 1rem;
+  color: black;
+  display: inline-block;
+  transform: translateY(0); /* Initial position */
+  transition: transform 0.2s ease-in-out;
+}
+
+.desktopMenuListItem:hover {
+  transform: translateY(-5px); /* Move upward on hover */
+}
+
+
+
+.desktopMenuBtn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.contactText {
+  color: black; 
+  display: block; 
+  margin-top: 8px;
+}
+
+.iconTextContainer {
+  display: flex;
+  align-items: center;
+}
+
+.downloadBtn {
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+
+.mobMenu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+}
+
+.bar {
+  width: 25px; /* Adjust the width of each bar */
+  height: 3px; /* Adjust the height of each bar */
+  background-color: #000; /* Adjust the color as needed */
+  margin: 3px 0; /* Adjust the margin between bars */
+}
+
+.mobMenu.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobMenu.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.mobMenu.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.navMenu {
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  right: 0rem;
+  height: fit-content;
+  width: 100%;
+  background: #3c3a3a;
+  border-radius: 0.5rem;
+}
+
+.listItem {
+  text-align: center;
+  padding: 1rem;
+  margin: 0.2rem;
+  cursor: pointer;
+  transform: translateY(0); /* Initial position */
+  transition: transform 0.2s ease-in-out;
+ 
+}
+
+.listItem:hover {
+  transform: translateY(-5px); /* Move upward on hover */
+  background: #080808;
+}
+
+.mobMenu {
+  display: none;
+  object-fit: cover;
+  
+}
+
+
+/* Media query for screens below 800px */
+@media (max-width: 800px) {
+  .desktopMenuBtn {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding-top: 29px;
+  }
+
+  .contactText {
+    color: black; 
+    display: block; 
+    margin-top: 5px;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+  .mobMenu {
+    display: block;
+    
+    
+  }
+ 
+ .bar {
+  margin: 0.4rem;
+ }
+ 
+}
+
+

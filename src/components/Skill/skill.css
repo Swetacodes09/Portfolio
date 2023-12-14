@@ -1,0 +1,112 @@
+.skill-container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    flex: 1;
+    margin: 10px;
+    width: 25%;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(235, 221, 221, 0.1);
+    transform: translateY(0); /* Initial position */
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+
+  
+.skill-card:hover {
+  transform: translateY(-5px); /* Move upward on hover */
+}
+
+.skill-heading {
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Segoe UI', 'Noto Sans', 'Montserrat';
+}
+
+.skill-heading h2 {
+    margin: 0;
+    margin-bottom: 40px;
+    color: rgba(248, 188, 85, 0.996);
+}
+
+.skill-card h3 {
+    margin: 0 0 10px;
+    font-family: 'Segoe UI', 'Noto Sans', 'Montserrat';
+    padding-bottom: 18px;
+}
+
+.skill-list {
+    display: flex;
+     /* Change to column */
+     flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center-align items horizontally */
+    gap: 1rem;
+}
+
+.skill-item {
+    padding: 8px;
+    border: 1px solid rgba(248, 188, 85, 0.996);
+    border-radius: 4px;
+    min-height: 40px; /* Set a minimum height for the skill items */
+    display: flex;
+    align-items: center; /* Center-align text vertically */
+    justify-content: center; /* Center-align text horizontally */
+    transform: translateY(0); /* Initial position */
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+.skill-item:hover {
+    transform: translateY(-5px); /* Move upward on hover */
+  }
+
+
+  
+  @media (max-width: 700px) {
+    .skill-container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.7rem;
+    }
+    .skill-card {
+      width: 90%; /* Adjust the width for mobile screens */
+    }
+    .skill-list {
+        display: flex;
+         /* Change to column */
+         flex-direction: column;
+         align-items: center; /* Center-align items horizontally */
+        gap: 1rem;
+    }
+  }
+
+  @media only screen and (min-width: 700px) and (max-width: 950px) {
+    .skill-container {
+        width: 60%;
+        margin: 0 auto;
+        
+        display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 1rem;
+  
+    }
+    .skill-card {
+        width: 90%; /* Two cards in one row with some gap in tablet view */
+        margin: 10px; /* Adjust margin as needed for spacing between cards */
+    }
+}
+

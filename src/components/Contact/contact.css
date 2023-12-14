@@ -1,0 +1,89 @@
+#contact{
+    text-align: center;
+    padding: 1rem;
+}
+
+.contactDesc{
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Segoe UI', 'Noto Sans', 'Montserrat';
+}
+
+.contactForm{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.field{
+    background-color: #333;
+    width: 25%;
+    margin: 1rem;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(235, 221, 221, 0.1);
+    
+}
+
+.email{
+    height: 50px;
+    padding-left: 5px;
+    font-size: medium;
+}
+
+.name{
+    height: 40px;
+    padding: 5px;
+    font-size: medium;
+}
+
+.message{
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.submitBtn {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(235, 221, 221, 0.1);
+    font-family: 'Segoe UI', 'Noto Sans', 'Montserrat';
+    padding: 0.7rem;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    margin-top: 0.7rem;
+}
+
+.contactPageTitle {
+    margin-top: 3rem;
+    padding: 1rem;
+    color: rgba(248, 188, 85, 0.996);
+    font-family: 'Segoe UI', 'Noto Sans', 'Montserrat';
+}
+
+@media (max-width: 800px) {
+    .field{
+      
+        width: 60%;
+        
+        
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1400px) {
+    .field{
+      
+        width: 60%;
+        
+        
+    }
+    
+  }

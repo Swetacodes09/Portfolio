@@ -1,0 +1,13 @@
+.social-container {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.5em;
+}
+
+.social-container a {
+  color: rgba(248, 188, 85, 0.996); /* Change the color as needed */
+  text-decoration: underline; /* Add underline to make it look like a link */
+  font-size: 1.2em;
+}
+
