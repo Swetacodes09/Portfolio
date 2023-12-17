@@ -11,3 +11,8 @@
   font-size: 1.2em;
 }
 
+.linkedin {
+  border: none;
+  cursor: pointer;
+}
+

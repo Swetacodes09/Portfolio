@@ -23,7 +23,7 @@ const Intro = () => {
         <p>
           <span className="bold-text">Hi, I'm Sweta</span><br />
           <span className="larger-text">I am a skilled and proficient web developer<br />
-            with experience in creating user-friendly and interacting websites using Ruby on Rails, HTML, CSS, JavaScript,
+            with experience in creating user-friendly and dynamic websites using Ruby on Rails, HTML, CSS, JavaScript,
             and React.</span>
         </p>
       </section>

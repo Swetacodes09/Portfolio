@@ -1,6 +1,6 @@
 import React from 'react';
 import './project.css';
-import linkedenImage from '../../assets/linkedin1.png';
+import linkedenImage from '../../assets/linkedinnew.png';
 
 const Project = () => {
   const githubUrl = 'https://github.com/Swetaaa404Errr/RailsLinkedInClone';
@@ -16,7 +16,7 @@ const Project = () => {
       <div className="project-card">
         <img src={linkedenImage} alt="LinkedIn Clone" className="project-image" />
         <div className="project-text">
-          <h3>LinkedIn Clone</h3>
+          <h3>Job Alley</h3>
           <p>Ruby On Rails, HTML, CSS, JavaScript</p>
         </div>
       </div>
