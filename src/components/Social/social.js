@@ -13,7 +13,7 @@ const Social = () => {
     <div className="social-container">
 
       Contact Me  <a href={linkedinProfileLink} target="_blank" rel="noopener noreferrer"><button class="linkedin">
-            <FontAwesomeIcon icon={faLinkedin} style={{ color: 'black' }} size="3x" />
+            <FontAwesomeIcon icon={faLinkedin} style={{ color: 'rgba(19, 90, 221, 0.996)' }} size="3x" />
           </button></a>
       </div>
       </section>
